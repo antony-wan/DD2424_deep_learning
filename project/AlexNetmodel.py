@@ -1,5 +1,7 @@
 from build_model import model_tools
 import tensorflow as tf
+import numpy as np
+
 model=model_tools()
 
 def generate_model(images_ph,number_of_classes):
