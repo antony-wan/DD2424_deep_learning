@@ -1,3 +1,8 @@
+"""
+Load images from data_set/batches.meta and returs data and label
+
+"""
+
 import pickle
 import numpy as np
 import os
@@ -9,6 +14,21 @@ import tensorflow as tf
 
 
 def get_data_set(name="train"):
+    '''
+    Parameters :
+    ------
+    name : string
+        name = "train" or name = "test"    
+        
+    Return :
+    ------
+    data, label : array
+        size(data) = [numbers of images, dimension of an image]
+        size(label) = [numbers of images, one hot corresponding to label]
+    
+    Example :
+        
+    '''
     x = None
     y = None
 
